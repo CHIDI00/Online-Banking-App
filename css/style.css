@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+}
+
+.top-nav-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    padding: 5px 10px;
+}
+
+.top-nav-section h2 {
+    font-size: 20px;
+}
+
+.top-nav-section .profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+}
+
+.top-nav-section .profile i {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    background-color: rgb(247, 250, 250);
+    cursor: pointer;
+}
+
+.profile img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+/* Debit card section  */
+.debit-card-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 220px;
+    margin: 6px 0;
+}
+
+.debit-card-section .card-container {
+    position: relative;
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+    padding: 10px;
+    color: #c8c5c5;
+    /* filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.3)); */
+    /* box-shadow: 0px 8px 5px rgb(0, 0, 0, .3); */
+    background-image: url('https://i.pinimg.com/564x/21/5c/1b/215c1b81ba0c3146f67fb7663b487ee5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-container h2:first-child {
+    font-size: 16px;
+    margin-bottom: 80px;
+}
+
+.card-container .card-name {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-name img {
+    width: 70px;
+    /* filter: grayscale(100%); */
+}
+
+.debit-card-section .change-icon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+.change-icon span {
+    width: 5px;
+    height: 5px;
+    padding: 3px;
+    margin: 0 5px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.change-icon span.active {
+    background-color: #000;
+}
+
+/* show account balance section */
+.balance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 0 10px;
+    height: 70px;
+    border-radius: 10px 10px 0 0;
+    background-color: #f0f0f0;
+}
+
+.balance p {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* Transactions  */
+.transactions-container {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    height: 250px;
+    background-color: #f0f0f0;
+    margin: 5px 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+.transactions-container .transactions {
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    overflow-x: scroll;
+}
+
+.transactions-done {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.bank-ownername {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.bank-ownername img{
+    width: 30px;
+    border-radius: 80px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+}
+
+.buttons button {
+    width: 150px;
+    font-size: 16px;
+    padding: 13px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
