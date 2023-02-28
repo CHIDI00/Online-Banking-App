@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
@@ -15,7 +15,7 @@
 
         <!-- Top first section -->
         <div class="top-nav-section">
-            <h2>My cards</h2>
+            <h2>My card</h2>
             <div class="profile">
                 <i class="fa-solid fa-plus"></i>
                 <img src="images/meonly.jpg" alt="">
@@ -23,7 +23,7 @@
         </div>
 
         <div class="debit-card-section">
-            <div class="card-container">
+            <div class="card-container" id="front">
                 <h2>TITANIUM</h2>
                 <h2 class="card-number">0146 8267 8367 8268</h2>
 
@@ -33,16 +33,26 @@
                     <img src="images/mastercardlogo.png" alt="">
                 </div>
             </div>
+
+            <div class="card-container-backview" id="back">
+                <div class="black-area"></div>
+                <div class="cvc-number"><em>
+                    404
+                </em></div>
+                <p class="lorem20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ipsum eos assumenda, quasi voluptate officia consectetur facere. At, non quisquam?</p>
+            </div>
+
+
             <div class="change-icon">
-                <span class="icon1 active"></span>
-                <span class="icon2"></span>
+                <span id="frontView" class="icon1 active"></span>
+                <span id="backView" class="icon2"></span>
             </div>
         </div>
 
 
         <div class="balance">
             <h2>Balance</h2>
-            <p class="amount">$20,379.00</p>
+            <p class="amount" id="blur">$20,379.00</p>
         </div>
 
         <div class="transactions-container">
@@ -51,14 +61,20 @@
                 <div class="transactions-done">
                     <div class="bank-ownername">
                         <img src="images/paypallogo.png" alt="">
-                        <p>Okeh Emmanuel</p>
+                        <div class="name-date">
+                            <p>Okeh Emmanuel</p>
+                            <p class="date">Wed 10, 2023</p>
+                        </div>
                     </div>
                     <p class="green">+$5900.00</p>
                 </div>
                 <div class="transactions-done">
                     <div class="bank-ownername">
                         <img src="images/fcmblogo.png" alt="">
-                        <p>Azeez Alabi</p>
+                        <div class="name-date">
+                            <p>Azeez Alabi</p>
+                            <p class="date">Wed 10, 2023</p>
+                        </div>
                     </div>
                     <p>-$120.00</p>
                 </div>
@@ -67,7 +83,7 @@
                         <img src="images/spotifylogo.jpeg" alt="">
                         <p>1 month subscription</p>
                     </div>
-                    <p>-$50.00</p>
+                    <p>-$49.99</p>
                 </div>
                 <div class="transactions-done">
                     <div class="bank-ownername">
@@ -99,33 +115,39 @@
                 </div>
                 <div class="transactions-done">
                     <div class="bank-ownername">
-                        <img src="images/paypallogo.png" alt="">
-                        <p>Osita Bright</p>
+                        <img src="images/chippercashlogo.png" alt="">
+                        <p>Victor Cyril</p>
                     </div>
-                    <p>-$120.00</p>
+                    <p class="green">+$1200.00</p>
                 </div>
                 <div class="transactions-done">
                     <div class="bank-ownername">
-                        <img src="images/paypallogo.png" alt="">
+                        <img src="images/fcmblogo.png" alt="">
                         <p>Osita Bright</p>
                     </div>
                     <p>-$700.00</p>
                 </div>
                 <div class="transactions-done">
                     <div class="bank-ownername">
-                        <img src="images/paypallogo.png" alt="">
+                        <img src="images/chippercashlogo.png" alt="">
                         <p>Azeez Alabi</p>
                     </div>
-                    <p>-$120.00</p>
+                    <p class="green">+$2400.00</p>
                 </div>
 
             </div>
         </div>
 
         <div class="buttons">
-            <button><i class="fa-solid fa-radar"></i>Pay</button>
-            <button><i class="fa-solid fa-up-to-line"></i></i>Transfer</button>
+            <button><i class="fa-solid fa-qrcode"></i>Pay</button>
+            <button><i class="fa-solid fa-paper-plane"></i>Transfer</button>
         </div>
     </div>
+
+    <div class="transfer-section">
+        
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
