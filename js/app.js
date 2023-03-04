@@ -49,3 +49,13 @@ close_transfer_section.onclick = ()=> {
     home_section.style.display = 'flex';
     // transfer_section.style.transition = 
 }
+
+const pay_btn = document.getElementById('payBtn');
+const close_payment_section = document.getElementById('closePayBtn');
+const  paySection = document.querySelector('pay-section');
+pay_btn.addEventListener("click", paycenter)
+
+close_payment_section.addEventListener('click', ()=> {
+    paySection.style.display = "none";
+    home_section.style.display = "flex"
+})

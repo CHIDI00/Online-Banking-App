@@ -1,7 +1,7 @@
-const pay_btn = document.getElementById('payBtn');
+// const pay_btn = document.getElementById('payBtn');
 
-pay_btn.addEventListener("click", paycenter)
+// pay_btn.addEventListener("click", paycenter)
 
-function paycenter() {
-    let 
-}
+// function paycenter() {
+    
+// }
