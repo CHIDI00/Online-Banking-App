@@ -7,13 +7,15 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="css/transefer.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="body">
+    <div class="main-body">
 
         <!-- Top first section -->
+        <div class="home-section">
         <div class="top-nav-section">
             <h2>My card</h2>
             <div class="profile">
@@ -43,10 +45,10 @@
             </div>
 
 
-            <div class="change-icon">
-                <span id="frontView" class="icon1 active"></span>
-                <span id="backView" class="icon2"></span>
-            </div>
+        </div>
+        <div class="change-icon">
+            <span id="frontView" class="icon1 active"></span>
+            <span id="backView" class="icon2"></span>
         </div>
 
 
@@ -57,13 +59,14 @@
 
         <div class="transactions-container">
             <div class="transactions">
+            <div class="transactions2">
 
                 <div class="transactions-done">
                     <div class="bank-ownername">
                         <img src="images/paypallogo.png" alt="">
                         <div class="name-date">
                             <p>Okeh Emmanuel</p>
-                            <p class="date">Wed 10, 2023</p>
+                            <p class="date">Tue 28, 2023</p>
                         </div>
                     </div>
                     <p class="green">+$5900.00</p>
@@ -73,7 +76,7 @@
                         <img src="images/fcmblogo.png" alt="">
                         <div class="name-date">
                             <p>Azeez Alabi</p>
-                            <p class="date">Wed 10, 2023</p>
+                            <p class="date">Sat 24, 2023</p>
                         </div>
                     </div>
                     <p>-$120.00</p>
@@ -81,28 +84,41 @@
                 <div class="transactions-done">
                     <div class="bank-ownername">
                         <img src="images/spotifylogo.jpeg" alt="">
-                        <p>1 month subscription</p>
+                        <div class="name-date">
+                            <p>1 month subscription</p>
+                            <p class="date">Thus 22, 2023</p>
+                        </div>
                     </div>
                     <p>-$49.99</p>
                 </div>
                 <div class="transactions-done">
                     <div class="bank-ownername">
                         <img src="images/chippercashlogo.png" alt="">
-                        <p>Olaolua Joshua</p>
+                        <div class="name-date">
+                            <p>Olaolua Joshua</p>
+                            <p class="date">Thus 22, 2023</p>
+                        </div>
                     </div>
                     <p>-$1400.00</p>
                 </div>
                 <div class="transactions-done">
                     <div class="bank-ownername">
                         <img src="images/applepaylogo.png" alt="">
-                        <p>Funded ApplePay account</p>
+                        <div class="name-date">
+                            <p>Funded ApplePay account</p>
+                            <p class="date">Fri 10, 2023</p>
+                        </div>
                     </div>
                     <p>-$1000.00</p>
                 </div>
                 <div class="transactions-done">
                     <div class="bank-ownername">
                         <img src="images/netflixlogo.jpeg" alt="">
-                        <p>Monthly subscription</p>
+                        <p></p>
+                        <div class="name-date">
+                            <p>Monthly subscription</p>
+                            <p class="date">Wed 10, 2023</p>
+                        </div>
                     </div>
                     <p>-$25.00</p>
                 </div>
@@ -136,18 +152,36 @@
                 </div>
 
             </div>
+            </div>
         </div>
 
         <div class="buttons">
-            <button><i class="fa-solid fa-qrcode"></i>Pay</button>
-            <button><i class="fa-solid fa-paper-plane"></i>Transfer</button>
+            <button id="payBtn"><i class="fa-solid fa-qrcode"></i>Pay</button>
+            <button id="transferBtn"><i class="fa-solid fa-paper-plane"></i>Transfer</button>
         </div>
     </div>
 
     <div class="transfer-section">
-        
+        <div class="top">
+            <button id="closeBtn" class="closeBtn"><i class="fa-solid fa-angle-left"></i></button>
+            <button id="processBtn" class="processBtn">Next</button>
+        </div>
+
+        <div class="account-details-inputField">
+            <input type="text" >
+            <input type="text" placeholder="01233456789">
+        </div>
     </div>
 
-    <script src="js/main.js"></script>
+    <div class="pay-section">
+        <div class="close-payBtn">
+            <button id="closePayBtn"><i class="fa-solid fa-angle-left"></i></button>
+        </div>
+    </div>
+
+    </div>
+
+    <script src="paymentsection.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
