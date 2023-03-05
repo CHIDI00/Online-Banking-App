@@ -108,12 +108,18 @@ body {
 .card-container h2:first-child {
     font-size: 16px;
     margin-bottom: 80px;
-    
 }
 
 .card-container h2:last-child {
     font-family: 'Sofia Sans', sans-serif;
     word-spacing: 2px;
+    font-size: 5px;
+}
+
+.card-container .card-number {
+    font-size: 19px;
+    font-weight: 400;
+    letter-spacing: 3px;
 }
 
 .card-container .card-name {
